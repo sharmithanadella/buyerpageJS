@@ -1,48 +1,13 @@
 import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 
+
 const manufacturers = [
-  "Acura",
-  "Alfa Romeo",
-  "Aston Martin",
-  "Audi",
-  "Bentley",
-  "BMW",
-  "Buick",
-  "Cadillac",
-  "Chevrolet",
-  "Chrysler",
-  "Citroen",
-  "Dodge",
-  "Ferrari",
-  "Fiat",
-  "Ford",
-  "GMC",
-  "Honda",
-  "Hyundai",
-  "Infiniti",
-  "Jaguar",
-  "Jeep",
-  "Kia",
-  "Lamborghini",
-  "Land Rover",
-  "Lexus",
-  "Lincoln",
-  "Maserati",
-  "Mazda",
-  "McLaren",
-  "Mercedes-Benz",
-  "MINI",
-  "Mitsubishi",
-  "Nissan",
-  "Porsche",
-  "Ram",
-  "Rolls-Royce",
-  "Subaru",
-  "Tesla",
-  "Toyota",
-  "Volkswagen",
-  "Volvo",
+  "Acura", "Alfa Romeo", "Aston Martin", "Audi", "Bentley", "BMW", "Buick", "Cadillac",
+  "Chevrolet", "Chrysler", "Citroen", "Dodge", "Ferrari", "Fiat", "Ford", "GMC", "Honda",
+  "Hyundai", "Infiniti", "Jaguar", "Jeep", "Kia", "Lamborghini", "Land Rover", "Lexus",
+  "Lincoln", "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "MINI", "Mitsubishi", "Nissan",
+  "Porsche", "Ram", "Rolls-Royce", "Subaru", "Tesla", "Toyota", "Volkswagen", "Volvo"
 ];
 
 const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
@@ -63,7 +28,6 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className='relative w-full'>
           <Combobox.Button className='absolute top-[14px]'>
-            {/* put the path to the image link in this directly vey */}
             <img
               src='/car-logo.svg'
               width={20}
@@ -132,4 +96,3 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
 };
 
 export default SearchManufacturer;
-
